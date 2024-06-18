@@ -6,11 +6,8 @@ import numpy as np
 train = pd.read_csv('train.csv')
 test = pd.read_csv('test.csv')
 print(train.head())
-
 train.info()
-
 print(train.describe())
-
 print(train.isnull().sum())
 
 train['Age'].fillna(train['Age'].median(), inplace=True)
